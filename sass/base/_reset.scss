@@ -21,9 +21,14 @@ h3 {margin-top: 0;
 
 .link {
     text-decoration: none;
+    color: currentColor;
     }
 
 ul {
     list-style: none;
+    }
+
+    .list {
+        padding-left: 0; 
     }
     

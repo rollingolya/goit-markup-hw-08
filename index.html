@@ -30,11 +30,12 @@
           href="./index.html"
           aria-label="Посилання на студію"
           lang="en-us">Web<span class="logo__studio">Studio</span></a>
-
+          <!-- Burger button -->
             <button 
               class="mobile-menu-btn"
               type="button"
               aria-label="Кнопка мобильное меню" 
+              aria-controls="menu-container"
               data-menu-button>
               <svg class="mobile-menu-icon" width="24" height="16">
                 <use class="mobile-menu-burger" href="./images/icons-svg.svg#burger-menu"></use>
@@ -42,52 +43,52 @@
               </svg>
             </button>
             <!-- Modal window mobile menu -->
-            <div class="mobile-menu">
+            <div class="mobile-menu" id="menu-container" data-menu>
               <ul class="mobile-menu__list list">
-                <li class="mobile-menu__nav">
+                <li class="mobile-menu__nav-item">
                   <a
-                    class=""
+                    class="link current"
                     href="./index.html"
                     aria-label="Посилання на студию">Студия</a>
                 </li>
-                <li class="mobile-menu__nav">
+                <li class="mobile-menu__nav-item">
                   <a
-                    class=""
+                    class="link"
                     href="./portfolio.html"
                     aria-label="Посилання на студию">Портфолио</a>
                   </li>
-                <li class="mobile-menu__nav"><a
-                  class=""
+                <li class="mobile-menu__nav-item"><a
+                  class="link"
                   href="Контакти"
                   aria-label="Посилання на студию">Контакты</a>
                 </li>
               </ul>
-              <ul class="list">
+              <ul class="mobile-menu__contacts list">
                 <li class="mobile-menu__contacts-item">
                   <a 
-                  class="header__link link__header link" 
+                  class="accent link" 
                   href="tel:+380961111111">
                   +38 096 111 11 11</a>
                 </li>
                 <li class="mobile-menu__contacts-item">
                   <a 
-                    class="header__link link" 
+                    class="link" 
                     href="mailto:info@devstudio.com">
                     info@devstudio.com</a>
                 </li>
               </ul>
-              <ul class="list">
+              <ul class="mobile-menu__social list">
                 <li class="mobile-menu__social-item">
-                  <a href="">Instagram</a>
+                  <a class="mobile-menu__social-link link" href="">Instagram</a>
                 </li>
                 <li class="mobile-menu__social-item">
-                  <a href="">Twitter</a>
+                  <a class="mobile-menu__social-link link" href="">Twitter</a>
                 </li>
                 <li class="mobile-menu__social-item">
-                  <a href="">Facebook</a>
+                  <a class="mobile-menu__social-link link" href="">Facebook</a>
                 </li>
                 <li class="mobile-menu__social-item">
-                  <a href="">LinkedIn</a>
+                  <a class="mobile-menu__social-link link" href="">LinkedIn</a>
                 </li>
               </ul>
             </div>
