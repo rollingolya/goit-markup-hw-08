@@ -1,35 +1,47 @@
 // Секція Наша команда
 
 .team {
-    @extend %section;
     background-color: rgba(245, 244, 250, 1);
 
     &__title {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
     }
     
     &__wrap {
         padding-top: 30px;
-        padding-bottom: 30px;
-        width: 270px;
+        padding-bottom: 24px;
+        width: 450px;
     
         background: #FFFFFF;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
+
+        @media screen and (min-width: 768px) {
+            padding-top: 30px;
+            padding-bottom: 24px;
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            width: 270px;
+        }
     }
     
     &__list {
         display: flex;
+        flex-wrap: wrap; 
         padding-left: 0;
-        margin-right: 30px;
-    }
-    
-    &__icon {
-        margin-right: 30px;
-    }
-    
-    &__icon:last-child {
-        margin-right: 0;
+        gap: 30px;
     }
     
     &__img {
