@@ -1,0 +1,24 @@
+.mobile-menu-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+
+    border: none;
+    background-color: transparent;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.mobile-menu-close {
+    opacity: 0;
+}
+
+.mobile-menu-icon {
+    fill: black;
+}
