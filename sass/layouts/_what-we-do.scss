@@ -1,0 +1,55 @@
+// Секція Чем мы занимаемся
+
+.what-we-do {
+    @extend %section;
+    padding-top: 0;
+
+    &__title {
+        margin-bottom: 50px;
+        }
+        
+    &__list {
+        display: flex;
+        padding: 0;
+        }
+        
+    &__item {
+        position: relative;
+        
+        flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
+        margin-right: 30px;
+        }
+        
+    &__item:last-child {
+        margin-right: 0;
+        }
+        
+    &__text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        
+        background-color: rgba(47, 48, 58, 0.8);
+        color: #FFFFFF;
+        }
+        
+    &__text-frst {
+        padding: 27px 82px;
+        }
+        
+    &__text-scnd {
+        padding: 27px 85px;
+        }
+        
+    &__text-thrd {
+        padding: 27px 90px;
+        }
+    }
+    

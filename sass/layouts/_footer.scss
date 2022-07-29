@@ -1,0 +1,51 @@
+// Секция Footer bg
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgba(47, 48, 58, 1);
+
+    &__group {
+
+        font-style: normal;
+        line-height: 1.71;
+    }
+    
+    &__link {
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__link--light {
+
+        color: rgba(255, 255, 255, 1);
+    }
+
+    &__list {
+        padding-left: 0;
+    }
+}
+    
+    .logo__footer {
+
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    
+    .logo__studio--light {
+        color: white;
+    } 
+    
+    .link__footer {
+        display: inline-block;
+        margin-bottom: 9px;
+    }
+    
+    .group__footer {
+        display: flex;
+        align-items: baseline;
+    }

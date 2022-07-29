@@ -1,0 +1,15 @@
+.form-order__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+    padding: 10px 55px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color: #188CE8;
+}
+}

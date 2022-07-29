@@ -1,0 +1,55 @@
+// Секція features
+
+.features {
+    @extend %section;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        list-style: none;
+        margin: -15px;
+        }
+        
+    &__element {
+        width: 270px;
+        flex-basis: calc(100% - ((var(--items) - 1) * var(--indent)) / var(--items));
+        margin: 15px;
+        }
+    
+    &__name {
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: rgba(33, 33, 33, 1);  
+    }
+    
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        
+        letter-spacing: 0.03em;
+        color: rgba(117, 117, 117, 1);
+    }
+}
+
+
+// Оформлення плашок в секції особенности
+
+.features__item {
+    width: 270px;
+    height: 120px;
+
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.item__features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+}

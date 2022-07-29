@@ -1,0 +1,118 @@
+// Portfolio filtr
+
+.portfolio {
+    @extend %section;
+
+    &__button {
+
+        display: inline-block;
+        justify-content: space-between; 
+        
+        height: 38px;
+        padding: 6px 22px;
+        
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        letter-spacing: 0.03em;
+        
+        cursor: pointer; 
+        
+        background-color: #F5F4FA;
+        border: none;
+        border-radius: 4px;
+        color: #212121;
+        
+        transition-property: color, background-color, box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+        
+    &__button:hover,
+    &__button:focus {
+
+        color: #FFFFFF; 
+        background-color: var(--accent);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); 
+    }
+
+    &__list &__item:not(:last-child) {
+
+        margin-right: 8px;
+    }
+
+    &__list {
+
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        
+}
+}
+
+    .btn-all {
+    min-width: 73px;
+    }
+    
+    .btn-web {
+    min-width: 128px;
+    }
+    
+    .btn-apps {
+    min-width: 145px;
+    }
+    
+    .btn-dsgn {
+    min-width: 103px;
+    }
+    
+    .btn-mrktng {
+    min-width: 130px;
+    }
+
+    .card-set-item--focused:hover .overlay__desc,
+    .card-set-item--focused:focus .overlay__desc {
+
+        transform: translateY(0%);
+    }
+
+    // Стилізація оверлею
+
+    .overlay__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        
+        color: #212121;
+    }
+    
+    .overlay__text { font-weight: 400;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.03em;
+        
+        color: #757575;
+    } 
+    
+    .wrap-border {
+        background: #FFFFFF;
+        border: 1px solid #EEEEEE;
+        border-top: transparent;
+        width: 370px;
+        padding: 20px 24px;
+    }
+
+// Card-set з focus/hover
+
+    .card-set-item--focused {
+        transition-property: background-color, box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .card-set-item--focused:hover,
+    .card-set-item--focused:focus {
+        background-color: rgba(33, 150, 243, 0.9);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
+    }

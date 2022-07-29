@@ -1,0 +1,16 @@
+// Форма модального вікна
+
+.form-order {
+    display: flex;
+    flex-direction: column;
+
+    &__call-action {
+        margin-bottom: 12px;
+    
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+}
+        
