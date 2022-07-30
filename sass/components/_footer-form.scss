@@ -1,7 +1,6 @@
 // Footer form 
 
 .follow-form {
-    margin-left: auto;
 
     &__text {
 
@@ -18,7 +17,6 @@
     &__field {
 
         display: inline-flex;
-        margin-right: 12px;
         padding: 15px 16px;
         box-sizing: border-box;
     
@@ -43,13 +41,53 @@
     }
 }
 
+.follow-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+        align-items: flex-start;
+    }
+}
+
+.follow-form__text {
+    margin-top: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+
+    }
+}
+
+.follow-form__field {
+    margin-right: 0;
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 12px;
+    }
+}
+
 /* Оформлення кнопки в Footer */
 
 .button__footer {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     text-align: center;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
     padding: 13px 28px;
+
+    @media screen and (min-width: 1200px) {
+        display: inline-flex;
+    }
 }
 
 .icon__button {

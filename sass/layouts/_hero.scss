@@ -10,22 +10,40 @@
 
     &__title {
 
-        width: 696px;
+        // width: 696px;
+        width: 360px;
         margin-right: auto;
         margin-left:auto;
             
         color: rgba(255, 255, 255, 1);
             
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+        // font-size: 44px;
+        // line-height: 1.36;
+        font-size: 26px;
+        line-height: 1.62;
             
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         margin-bottom: 30px;}
+
+        @media screen and (min-width: 768px) {
+            width: 768px;
+
+            font-size: 26px;
+            line-height: 1.62;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 1600px;
+
+            font-size: 44px;
+            line-height: 1.36;
+        }
+    }
         
-    &__button {
+    .hero__button {
         
         display: inline-block;
         align-items: center;
@@ -37,10 +55,10 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
         
-    &__button:hover,
-    &__button:focus {
+    .hero__button:hover,
+    .hero__button:focus {
 
         background-color: #188CE8; 
     }
-    }
+    
     
