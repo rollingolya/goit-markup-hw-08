@@ -3,28 +3,34 @@
 .what-we-do {
 
     padding-top: 0;
+    display: block;
 
-    &__title {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+    }
+
+    .what-we-do__title {
         margin-bottom: 50px;
         }
         
-    &__list {
+    .what-we-do__list {
         display: flex;
         padding: 0;
         }
         
-    &__item {
+    .what-we-do__item {
         position: relative;
         
         flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
         margin-right: 30px;
         }
         
-    &__item:last-child {
+    .what-we-do__item:last-child {
         margin-right: 0;
         }
         
-    &__text {
+    .what-we-do__text {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -40,16 +46,15 @@
         color: #FFFFFF;
         }
         
-    &__text-frst {
+    .what-we-do__text-frst {
         padding: 27px 82px;
         }
         
-    &__text-scnd {
+    .what-we-do__text-scnd {
         padding: 27px 85px;
         }
         
-    &__text-thrd {
+    .what-we-do__text-thrd {
         padding: 27px 90px;
         }
-    }
-    
+

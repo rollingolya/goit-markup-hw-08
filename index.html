@@ -92,8 +92,6 @@
                 </li>
               </ul>
             </div>
-
-
         <!-- Menu nav -->
         <nav class="nav">
           <ul class="nav__list list__nav">
@@ -279,48 +277,70 @@
         </div>
       </section>
       <!-- Секція Чем мы занимаемся -->
-      <!-- <section class="what-we-do section">
+      <section class="what-we-do section">
         <div class="container">
           <h2 class="what-we-do__title title">Чем мы занимаемся</h2>
           <ul class="what-we-do__list">
             <li class="what-we-do__item">
-              <img
-                class="what-we-do__img"
-                src="images/box1.jpg"
-                alt="Программирование за планшетом"
-                width="370"/>
+              <picture class="what-we-do__img">
+                <!-- desktop screen -->
+                <source
+                media="(min-width: 1200px)"
+                srcset="images\what-we-do\img-1-s-1x.jpg 1x, images\what-we-do\img-1-s-2x.jpg 2x"
+                type="image/jpeg"/>
+                <img src="./images\what-we-do\img-1-s-1x.jpg" alt="Программирование за планшетом" width="370" height="294">
+              </picture>
                 <p class="what-we-do__text what-we-do__text-frst">Десктопные приложения</p>
             </li>
             <li class="what-we-do__item">
-              <img
-                class="what-we-do__img"
-                src="images/box2.jpg"
-                alt="Разработка мобильного приложения"
-                width="370"/>
+              <picture class="what-we-do__img">
+                <!-- desktop screen -->
+                <source
+                media="(min-width: 1200px)"
+                srcset="images\what-we-do\img-2-s-1x.jpg 1x, images\what-we-do\img-2-s-2x.jpg 2x"
+                type="image/jpeg"/>
+                <img src="./images\what-we-do\img-2-s-1x.jpg" alt="Разработка мобильного приложения" width="370" height="294">
+              </picture>
                 <p class="what-we-do__text what-we-do__text-scnd">Мобильные приложения</p>
             </li>
             <li class="what-we-do__item">
-              <img
-                class="what-we-do__img"
-                src="images/box3.jpg"
-                alt="Рисование на планшете"
-                width="370"/>
+              <picture class="what-we-do__img">
+                <!-- desktop screen -->
+                <source
+                media="(min-width: 1200px)"
+                srcset="images\what-we-do\img-3-s-1x.jpg 1x, images\what-we-do\img-3-s-2x.jpg 2x"
+                type="image/jpeg"/>
+                <img src="./images\what-we-do\img-3-s-1x.jpg" alt="Рисование на планшете" width="370" height="294">
+              </picture>
                 <p class="what-we-do__text what-we-do__text-thrd">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Секція Наша команда -->
       <section class="team section">
         <div class="container">
           <h2 class="team__title title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__icon">
-              <img
-                class="team__img"
-                src="images/box4.jpg"
-                alt="Портрет Игоря Демьяненко"
-                width="270"/>
+              <picture>
+                <!-- desktop screen -->
+                <source
+                media="(min-width: 1200px)"
+                srcset="images/team/img-1-s-1x.jpg 1x, images/team/img-1-s-2x.jpg 2x"
+                type="image/jpeg"/>
+                <!-- tablet screen -->
+                <source
+                media="(min-width: 768px)"
+                srcset="images/team/img-1-m-1x.jpg 1x, images/team/img-1-m-2x.jpg 2x"
+                type="image/jpeg"/>
+                <!-- mobile screen -->
+                <source
+                media="(max-width: 767px)"
+                srcset="images/team/img-1-L-1x.jpg 1x, images/team/img-1-L-2x.jpg 2x"
+                type="image/jpeg"/>
+                <img src="./images/team/img-1-s-1x.jpg" alt="Фото Игоря Демьяненко" width="450" height="460">
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__employee">Игорь Демьяненко</h3>
                 <p class="team__position position__team">Product Designer</p>
@@ -378,11 +398,24 @@
               </div>
             </li>
             <li class="team__icon">
-              <img
-                class="team__img"
-                src="images/box5.jpg"
-                alt="Портрет Ольги Репиной"
-                width="270"/>
+              <picture>
+                <!-- desktop screen -->
+                <source
+                media="(min-width: 1200px)"
+                srcset="images/team/img-2-s-1x.jpg 1x, images/team/img-2-s-2x.jpg 2x"
+                type="image/jpeg"/>
+                <!-- tablet screen -->
+                <source
+                media="(min-width: 768px)"
+                srcset="images/team/img-2-m-1x.jpg 1x, images/team/img-2-m-2x.jpg 2x"
+                type="image/jpeg"/>
+                <!-- mobile screen -->
+                <source
+                media="(max-width: 767px)"
+                srcset="images/team/img-2-L-1x.jpg 1x, images/team/img-2-L-2x.jpg 2x"
+                type="image/jpeg"/>
+                <img src="./images/team/img-2-s-1x.jpg" alt="Фото Ольги Репиной" width="450" height="460">
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__employee">Ольга Репина</h3>
                 <p class="team__position position__team">Frontend Developer</p>
@@ -439,11 +472,24 @@
               </div>
             </li>
             <li class="team__icon">
-              <img
-                class="team__img"
-                src="images/box6.jpg"
-                alt="Портрет Николая Тарасова"
-                width="270"/>
+              <picture>
+                <!-- desktop screen -->
+                <source
+                media="(min-width: 1200px)"
+                srcset="images/team/img-3-s-1x.jpg 1x, images/team/img-3-s-2x.jpg 2x"
+                type="image/jpeg"/>
+                <!-- tablet screen -->
+                <source
+                media="(min-width: 768px)"
+                srcset="images/team/img-3-m-1x.jpg 1x, images/team/img-3-m-2x.jpg 2x"
+                type="image/jpeg"/>
+                <!-- mobile screen -->
+                <source
+                media="(max-width: 767px)"
+                srcset="images/team/img-3-L-1x.jpg 1x, images/team/img-3-L-2x.jpg 2x"
+                type="image/jpeg"/>
+                <img src="./images/team/img-3-s-1x.jpg" alt="Фото Николая Тарасова" width="450" height="460">
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__employee">Николай Тарасов</h3>
                 <p class="team__position position__team">Marketing</p>
@@ -500,11 +546,24 @@
               </div>
             </li>
             <li class="team__icon">
-              <img
-                class="team__img"
-                src="images/box7.jpg"
-                alt="Портрет Михаила Ермакова"
-                width="270"/>
+              <picture>
+                <!-- desktop screen -->
+                <source
+                media="(min-width: 1200px)"
+                srcset="images/team/img-4-s-1x.jpg 1x, images/team/img-4-s-2x.jpg 2x"
+                type="image/jpeg"/>
+                <!-- tablet screen -->
+                <source
+                media="(min-width: 768px)"
+                srcset="images/team/img-4-m-1x.jpg 1x, images/team/img-4-m-2x.jpg 2x"
+                type="image/jpeg"/>
+                <!-- mobile screen -->
+                <source
+                media="(max-width: 767px)"
+                srcset="images/team/img-4-L-1x.jpg 1x, images/team/img-4-L-2x.jpg 2x"
+                type="image/jpeg"/>
+                <img src="./images/team/img-4-s-1x.jpg" alt="Фото Михаила Ермакова" width="450" height="460">
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__employee">Михаил Ермаков</h3>
                 <p class="team__position position__team">UI Designer</p>
