@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/main.min.css"/>
     <link rel="stylesheet" href="./css/styles.css"/>
   </head>
-  <body>
+  <body data-body>
     <!-- Header section -->
     <header class="header">
       <div class="header__container container">
@@ -28,6 +28,72 @@
           href="./index.html"
           aria-label="Посилання на студію"
           lang="en-us">Web<span class="logo__studio">Studio</span></a>
+          <!-- Burger button -->
+          <button 
+          class="mobile-menu-btn"
+          type="button"
+          aria-label="Кнопка мобильное меню" 
+          aria-controls="menu-container"
+          data-menu-button>
+          <svg class="mobile-menu-icon" width="24" height="16">
+            <use class="mobile-menu-burger" href="./images/icons-svg.svg#burger-menu"></use>
+            <use class="mobile-menu-close" href="./images/icons-svg.svg#close-menu"></use>
+          </svg>
+        </button>
+        <!-- Modal window mobile menu -->
+        <div class="mobile-menu" id="menu-container" data-menu>
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__nav-item">
+              <a
+                class="link"
+                href="./index.html"
+                aria-label="Посилання на студию">Студия</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a
+                class="link current"
+                href="./portfolio.html"
+                aria-label="Посилання на студию">Портфолио</a>
+              </li>
+            <li class="mobile-menu__nav-item"><a
+              class="link"
+              href="Контакти"
+              aria-label="Посилання на студию">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__contacts list">
+            <li class="mobile-menu__contacts-item">
+              <a 
+              class="accent link" 
+              href="tel:+380961111111">
+              +38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu__contacts-item">
+              <a 
+                class="link" 
+                href="mailto:info@devstudio.com">
+                info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__social list">
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link link" href="">Instagram</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+
+
+
+          
         <!-- Menu nav -->
         <nav class="nav">
           <ul class="nav__list list__nav">
@@ -113,7 +179,7 @@
                   исчерпывающие сведения о компании или частном лице.
                 </p>
               </div>
-              <div class="wrap-border">
+              <div class="wrap-border wrap-border--bid-padding">
                 <h2 class="overlay__title">Технокряк</h2>
                 <p class="overlay__text">Веб-сайт</p>
               </div>
