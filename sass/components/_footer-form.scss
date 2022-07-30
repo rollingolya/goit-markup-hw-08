@@ -47,11 +47,13 @@
     flex-wrap: wrap;
     align-items: center;
 
-    margin-right: auto;
-    margin-left: auto;
+        margin-right: auto;
+        margin-left: auto;
+    
 
     @media screen and (min-width: 1200px) {
         margin-left: auto;
+        margin-right: 0;
         align-items: flex-start;
     }
 }
