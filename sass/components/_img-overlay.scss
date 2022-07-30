@@ -2,10 +2,52 @@
 
 .hero-overlay {
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1600px 600px, cover;
+
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/background-img.jpg);
+    url(../images/hero/Img-1-mobile-1x.jpg);
+
+    // Для ретіна екранів Mobile version
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/Img-1-mobile-2x.jpg);
+    }
+
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/Img-1-tablet-1x.jpg);
+    }
+
+    // Для ретіна екранів Tablet version
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/Img-1-tablet-2x.jpg);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/Img-1-desk-1x.jpg);
+    }
+
+    // Для ретіна екранів Desktop version
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/Img-1-desk-2x.jpg);
+    }
 
 }

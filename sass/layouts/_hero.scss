@@ -2,46 +2,41 @@
 
 .hero {
 
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
-    
     background-color: rgba(47, 48, 58, 1); 
 
-    &__title {
-
-        // width: 696px;
-        width: 360px;
-        margin-right: auto;
-        margin-left:auto;
-            
-        color: rgba(255, 255, 255, 1);
-            
-        font-weight: 900;
-        // font-size: 44px;
-        // line-height: 1.36;
-        font-size: 26px;
-        line-height: 1.62;
-            
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        margin-bottom: 30px;}
-
-        @media screen and (min-width: 768px) {
-            width: 768px;
-
-            font-size: 26px;
-            line-height: 1.62;
-        }
-
-        @media screen and (min-width: 1200px) {
-            width: 1600px;
-
-            font-size: 44px;
-            line-height: 1.36;
-        }
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
+}
+
+    .hero__title {
+
+    margin-right: auto;
+    margin-left:auto;
+        
+        
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 1);
+
+    @media screen and (min-width: 1200px) {
+        width: 696px;
+
+        font-size: 44px;
+        line-height: 1.36;
+    }
+}
         
     .hero__button {
         
