@@ -7,8 +7,7 @@
   --accent: rgba(33, 150, 243, 1);
   --white: #ffffff;
   /* other */
-  --items: 4;
-  /* --indent: 30px; */
+  --items: 3;
 }
 
 .visually-hidden {
@@ -864,8 +863,8 @@ textarea::placeholder {
   letter-spacing: 0.03em;
   color: #FFFFFF;
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translateY(120%);
-          transform: translateY(120%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
@@ -1240,6 +1239,7 @@ textarea::placeholder {
 }
 .features__element {
   width: 450px;
+  height: 226px;
 }
 @media screen and (min-width: 768px) {
   .features__element {
@@ -1249,6 +1249,7 @@ textarea::placeholder {
 @media screen and (min-width: 1200px) {
   .features__element {
     width: 270px;
+    height: 251px;
   }
 }
 .features__name {
@@ -1743,6 +1744,11 @@ textarea::placeholder {
   border-top: transparent;
   width: 100%;
   padding: 20px 24px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrap-border--large {
+    padding-bottom: 56px;
+  }
 }
 
 .card-set-item--focused {
