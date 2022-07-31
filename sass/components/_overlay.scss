@@ -27,7 +27,7 @@
         color: #FFFFFF;
         background-color: rgba(33, 150, 243, 0.9);
     
-        transform: translateY(100%);
+        transform: translateY(120%);
     
         transition-property: transform;
         transition-duration: 250ms;
@@ -41,4 +41,10 @@
         height: auto;
     } 
 }
+
+    .card-set-item--focused:hover .overlay__desc,
+    .card-set-item--focused:focus .overlay__desc {
+
+        transform: translateY(0%);
+    }
 

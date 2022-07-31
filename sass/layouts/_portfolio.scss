@@ -77,12 +77,6 @@
     min-width: 130px;
     }
 
-    .card-set-item--focused:hover .overlay__desc,
-    .card-set-item--focused:focus .overlay__desc {
-
-        transform: translateY(0%);
-    }
-
     // Стилізація оверлею
 
     .overlay__title {
@@ -106,16 +100,8 @@
         background: #FFFFFF;
         border: 1px solid #EEEEEE;
         border-top: transparent;
-        width: 450px;
+        width: 100%;
         padding: 20px 24px;
-
-        @media screen and (min-width: 768px) {
-            width: 354px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            width: 370px;
-        }
     }
 
 // Card-set з focus/hover

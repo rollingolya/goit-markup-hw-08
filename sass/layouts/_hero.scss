@@ -13,13 +13,14 @@
     }
 }
 
+
     .hero__title {
 
     margin-right: auto;
-    margin-left:auto;
+    margin-left: auto;
+
         
-        
-    width: 360px;
+    width: 100%;
     font-size: 26px;
     line-height: 1.62;
 
@@ -29,6 +30,10 @@
     text-transform: uppercase;
     margin-bottom: 30px;
     color: rgba(255, 255, 255, 1);
+
+    @media screen and (min-width: 480px){
+        width: 360px;
+    }
 
     @media screen and (min-width: 1200px) {
         width: 696px;
