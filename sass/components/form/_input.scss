@@ -19,6 +19,10 @@
         width: 448px;
     }
 
+    @media screen and (max-width: 455px) {
+        width: 100%;
+    }
+
     }
     
     .form-order__field:focus + .form-order__icon .form-order__img {

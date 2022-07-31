@@ -13,8 +13,10 @@
     }
         
     &__element {
+        display: flex;
+        flex-direction: column;
+
         width: 450px;
-        height: 226px;
 
         @media screen and (min-width: 768px) {
             width: 354px;
@@ -22,7 +24,6 @@
             
         @media screen and (min-width: 1200px) {
             width: 270px;
-            height: 251px;
         }
     }
     
@@ -41,6 +42,7 @@
     }
     
     &__text {
+
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
@@ -55,6 +57,13 @@
         @media screen and (min-width: 1200px) {
             width: 270px;
         }
+    }
+}
+
+.features__text--grow {
+        padding-bottom: 0;
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        padding-bottom: 25px;
     }
 }
 

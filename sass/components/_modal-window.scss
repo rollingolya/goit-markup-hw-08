@@ -45,6 +45,10 @@
         width: 528px;
         height: 581px;
     }
+
+    @media screen and (max-width: 455px) {
+        width: calc(100% - 30px) ;
+    }
     
 }
 

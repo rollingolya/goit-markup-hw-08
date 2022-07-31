@@ -17,6 +17,7 @@
         position: relative;
         display: flex;
         margin-bottom: 10px;
+
     }
     
     &__group-last {
@@ -43,6 +44,9 @@
     } 
 }
 
+.form-order__item {
+    width: 100%;
+}
 
 textarea {
     box-sizing: border-box;
@@ -56,9 +60,15 @@ textarea {
     border-radius: 4px;
     outline: transparent;
 
+    @media screen and (max-width: 455px) {
+        width: 100%;
+        height: 100px;
+    }
+
     @media screen and (min-width: 1200px) {
         width: 448px;
     }
+
 }
 
 textarea::placeholder {
@@ -75,3 +85,4 @@ textarea::placeholder {
         line-height: 1.17;
     }
 }
+
