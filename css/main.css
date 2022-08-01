@@ -701,48 +701,30 @@ textarea::placeholder {
   fill: #FFFFFF;
 }
 
-.follow-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 @media screen and (min-width: 768px) {
   .follow-form {
     margin-right: auto;
     margin-left: auto;
   }
 }
+@media screen and (max-width: 1199px) {
+  .follow-form {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .follow-form {
     margin-left: auto;
     margin-right: 0;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
 }
 
 .follow-form__name {
-  width: 450px;
-}
-@media screen and (min-width: 1200px) {
-  .follow-form__name {
-    width: 570px;
-  }
+  width: 100%;
 }
 
 .follow-form__text {
-  display: inline-block;
+  display: block;
   margin-top: 60px;
   margin-bottom: 20px;
   font-size: 14px;
@@ -750,6 +732,11 @@ textarea::placeholder {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+@media screen and (max-width: 1199px) {
+  .follow-form__text {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 768px) {
   .follow-form__text {
@@ -761,14 +748,14 @@ textarea::placeholder {
   width: 100%;
 }
 
+.follow-form__label {
+  width: 100%;
+}
+
 .follow-form__field {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 15px 16px;
-  margin-right: 0;
   height: 50px;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -781,6 +768,13 @@ textarea::placeholder {
 @media screen and (min-width: 480px) {
   .follow-form__field {
     width: 450px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .follow-form__field {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
