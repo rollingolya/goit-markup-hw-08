@@ -3,43 +3,47 @@
 .overlay {
     position: relative; 
     overflow: hidden;
+}
 
-    &__desc {
+.overlay__desc {
 
-        position: absolute;
-        top: 0;
-        left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: left;
+    margin: 0;
+    padding: 77px 24px;
+    width: 100%;
+    height: 100%;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transform: translateY(101%);
+
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 479px) {
+
+        padding: 24px;
+        font-size: 14px;
     
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        text-align: left;
-        margin: 0;
-        padding: 63px 24px;
-        width: 100%;
-        height: 100%;
-    
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.56;
-        letter-spacing: 0.03em;
-    
-        color: #FFFFFF;
-        background-color: rgba(33, 150, 243, 0.9);
-    
-        transform: translateY(101%);
-    
-        transition-property: transform;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
-     &__img {
 
-        display: block;
-        max-width: 100%;
-        height: auto;
-    } 
+    @media screen and (min-width: 1200px) {
+        padding: 63px 24px;
+    }
 }
 
     .card-set-item--focused:hover .overlay__desc,
@@ -47,4 +51,11 @@
 
         transform: translateY(0%);
     }
+
+    .overlay__img {
+
+        display: block;
+        max-width: 100%;
+        height: auto;
+    } 
 

@@ -855,6 +855,7 @@ textarea::placeholder {
   position: relative;
   overflow: hidden;
 }
+
 .overlay__desc {
   position: absolute;
   top: 0;
@@ -870,7 +871,7 @@ textarea::placeholder {
           align-items: center;
   text-align: left;
   margin: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   width: 100%;
   height: 100%;
   font-weight: 400;
@@ -890,16 +891,28 @@ textarea::placeholder {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.overlay__img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+@media screen and (max-width: 479px) {
+  .overlay__desc {
+    padding: 24px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay__desc {
+    padding: 63px 24px;
+  }
 }
 
 .card-set-item--focused:hover .overlay__desc,
 .card-set-item--focused:focus .overlay__desc {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
+}
+
+.overlay__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .mobile-menu-btn {
